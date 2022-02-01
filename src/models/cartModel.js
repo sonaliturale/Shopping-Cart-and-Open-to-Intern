@@ -26,13 +26,13 @@ const cartSchema = new mongoose.Schema({
         }
     }],
 
-    totalPrice: { // comment: "Holds total price of all the items in the cart"
+    totalPrice: { 
         type: Number,
         required: true,
         trim: true
     },
 
-    totalItems: { // comment: "Holds total number of items in the cart"
+    totalItems: { 
         type: Number,
         required: true,
         trim: true

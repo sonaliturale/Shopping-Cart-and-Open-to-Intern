@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
     
-    email: { // valid
+    email: { 
         type: String,
         required: true,
         lowercase: true,
@@ -22,20 +22,20 @@ const userSchema = new mongoose.Schema({
         trim: true
     },
 
-    profileImage: { // s3 link
+    profileImage: { 
         type: String,
         required: true,
         trim: true
     },
 
-    phone: { // valid
+    phone: { 
         type: String,
         required: true,
         unique: true,
         trim: true
     },
 
-    password: {     // minlen 8, maxlen 15 // encrypted password
+    password: {    
         type: String,
         required: true,
         trim: true
@@ -81,4 +81,4 @@ const userSchema = new mongoose.Schema({
     { timestamps: true }
 )
  
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('Userproduct', userSchema)

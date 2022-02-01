@@ -1,5 +1,5 @@
-# Project 5 Product Management
-# This is aman kumar
+# Project  Product Management
+
 
 Project - Products Management
 Key points
@@ -348,12 +348,6 @@ Response format
 On success - Return HTTP status 200. Also return the updated order document. The response should be a JSON object like this
 On error - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like this
 
-Testing
-To test these apis create a new collection in Postman named Project 5 Shopping Cart
-Each api should have a new request in this collection
-Each request in the collection should be rightly named. Eg Create user, Create product, Get products etc
-Each member of each team should have their tests in running state
-Refer below sample A Postman collection and request sample
 
 Response
 Successful Response structure

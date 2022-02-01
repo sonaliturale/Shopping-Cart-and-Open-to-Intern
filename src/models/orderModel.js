@@ -17,26 +17,26 @@ const orderSchema = new mongoose.Schema({
             ref: 'Product',
             trim: true
         },
-        quantity: { // minimum 1
+        quantity: { 
             type: Number,
             required: true,
             trim: true
         }
     }],
 
-    totalPrice: { // "Holds total price of all the items in the cart"
+    totalPrice: { 
         type: Number,
         required: true,
         trim: true
     },
 
-    totalItems: { // "Holds total number of items in the cart"
+    totalItems: { 
         type: Number,
         required: true,
         trim: true
     },
 
-    totalQuantity: { // "Holds total number of items in the cart"
+    totalQuantity: { 
         type: Number,
         required: true,
         trim: true
@@ -53,7 +53,7 @@ const orderSchema = new mongoose.Schema({
         enum: ["pending", "completed", "cancelled"]
     },
 
-    deletedAt: { // when the document is deleted
+    deletedAt: { 
         type: Date,
     },
     

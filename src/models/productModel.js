@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema({
         trim: true
     },
 
-    price: { // valid number decimal
+    price: { 
         type: Number,
         required: true,
         trim: true
@@ -49,7 +49,7 @@ const productSchema = new mongoose.Schema({
         trim: true
     },
 
-    availableSizes: [{ //at least one size
+    availableSizes: [{ 
         type: String,
         trim: true,
         enum: ["S", "XS", "M", "X", "L", "XXL", "XL"]
@@ -60,7 +60,7 @@ const productSchema = new mongoose.Schema({
         trim: true
     },
 
-    deletedAt: {  // when the document is deleted
+    deletedAt: {  
         type: Date
     },
 
@@ -72,4 +72,4 @@ const productSchema = new mongoose.Schema({
     { timestamps: true }
 )
 
-module.exports = mongoose.model('Product', productSchema)
+module.exports = mongoose.model('ProductCart', productSchema)
